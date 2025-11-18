@@ -7,7 +7,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker build -t amitsingh98/checkoutservice:latest ."
+                        sh "docker build -t amitsinghs98/checkoutservice:latest ."
                     }
                 }
             }
